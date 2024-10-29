@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wdth,wght@62.5..100,100..900&display=swap');
+
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -321,9 +323,9 @@ section {
 }
 
 #logo img {
-    max-height: 22px;
+    max-height: 70px;
     vertical-align: middle;
-    margin-right: 15px;
+    margin-right: -53px;
 }
 
 #navigation-logo {
@@ -723,10 +725,9 @@ h6 {
     text-align: right;
 }
 
-/* Section Headings */
 
 .section-heading {
-    padding: 0 0 15px 0;
+    padding: 0 0 20px 0;
 }
 
 .section-subtitle {
