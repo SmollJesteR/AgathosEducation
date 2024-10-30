@@ -1393,71 +1393,134 @@ blockquote {
 }
 
 /* --------- 6.7 Pricing Table ---------- */
-
-.pricing-block-content {
-    background: #fff;
-    padding: 25px 0 25px 0;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07);
-    transition: all 0.2s ease-in-out 0s;
-    position: relative;
-    border: 10px solid #fff;
+/* Menyusun konten agar berada di tengah halaman */
+#pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Membuat section penuh tinggi layar */
+    padding: 20px;
 }
 
+/* Mengatur lebar dari pricing block */
+.pricing-block {
+    max-width: 850px; /* Lebar maksimum dari table */
+    width: 8500px; /* Memastikan mengikuti ukuran kontainer */
+    margin: 20px;
+}
 
+/* Styling untuk konten pricing */
+.pricing-block-content {
+    background: #fff;
+    padding: 40px; /* Menambah ruang di dalam block */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 10px solid #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Penyesuaian daftar dan harga */
 .pricing-block ul {
     list-style: none;
-    margin: 25px 0 25px 0;
+    margin: 30px 0;
+    padding: 0;
 }
 
 .pricing-block li {
-    padding: 14px 0;
+    padding: 15px 0;
     border-bottom: 1px dotted #e1e1e1;
 }
 
-.pricing-block li:last-of-type {
-    border:none;
-}
-
 .pricing-block h3 {
-    font-size:17px;
-    text-transform:uppercase;
-    padding-bottom:0;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .pricing-sub {
     font-style: italic;
-    color:#ccc;
-    margin:0 0 25px 0;
+    color: #aaa;
+    margin-bottom: 20px;
 }
 
-/*Price*/
-
 .pricing {
-    background: #f5f5f5;
-    padding: 25px;
-    position: relative;
+    background: #f7f7f7;
+    padding: 30px;
+    margin-top: 15px;
+    border-radius: 8px;
 }
 
 .price {
-    display: inline-block;
-    font-size: 62px;
-    font-weight: 700;
-    position: relative;
+    font-size: 72px;
+    font-weight: bold;
 }
 
 .price span {
+    font-size: 24px;
+    top: -10px;
+    left: -25px;
     position: absolute;
-    top: 0;
-    left: -20px;
-    font-size: 22px;
 }
 
-.pricing  p {
-    font-style:italic;
-    color:#b4b4b4;
-    line-height:auto;
-    margin:0;
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #d2b356;;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
 }
+
+.button:hover {
+    background-color: #fff;
+}
+
+/*statistik pendidikan */
+/* Styling section */
+#statistik-pendidikan {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+  }
+  
+  /* Styling judul */
+  #statistik-pendidikan h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling paragraf */
+  #statistik-pendidikan p {
+    font-size: 1.2em;
+    margin-bottom: 30px; /* Jarak antara paragraf dan gambar */
+  }
+  
+  /* Kontainer gambar */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Styling gambar dengan animasi */
+  .animate-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    opacity: 0; /* Awal gambar tidak terlihat */
+    transform: translateY(30px); /* Gambar sedikit bergeser ke bawah */
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  }
+  
+  /* Saat elemen muncul di layar */
+  .animate-img.show {
+    opacity: 1;
+    transform: translateY(0); /* Kembali ke posisi semula */
+  }
 
 
 
